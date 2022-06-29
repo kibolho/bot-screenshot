@@ -24,4 +24,4 @@ __pycache__/
 # vscode plugins
 /.history
 
-screenshots
+/screenshots/*.png

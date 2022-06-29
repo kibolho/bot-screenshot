@@ -11,7 +11,7 @@ positions:
 #
 # [pt_BR] Número de fotos da tela a serem tiradas
 #
-numberOfScreenshots: 100
+numberOfScreenshots: 102
 #
 # [en_US] Initial time before starting to take screen shots
 #
@@ -34,3 +34,9 @@ screenshotPosition:
   left: 430
   width: 580
   height: 800
+#
+# [en_US] Initial page
+#
+# [pt_BR] Pagina inicial
+#
+initialPage: 1

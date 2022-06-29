@@ -16,7 +16,7 @@ numberOfScreenshots = c['numberOfScreenshots']
 initialDelay = c['initialDelay']
 timeBetweenActions = c['timeBetweenActions']
 screenshotPosition = c['screenshotPosition']
-
+initialPage = c['initialPage']
 
 def moveToWithRandomness(x, y, t):
     pyautogui.moveTo(x*cp["percentageX"], y*cp["percentageY"], t)
@@ -145,9 +145,9 @@ def main():
     # ==Setup==
     global images, page
     images = load_images()
-    page = 1
+    page = initialPage
     time.sleep(initialDelay)
-    while page <= numberOfScreenshots:
+    while page <= initialPage + numberOfScreenshots:
         saveScreenshot()
         time.sleep(timeBetweenActions)
         nextPage()
